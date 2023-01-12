@@ -1,41 +1,51 @@
 ---
 type Link = {
-    label: string,
-    href: string
-}
+  label: string;
+  href: string;
+};
 
 const links = [
-    {
-        label: "Rules",
-        href: "/rules"
-    },
-    {
-        label: "Map",
-        href: "/map"
-    },
-    {
-        label: "Forum",
-        href: "https://forum.rokucraft.com/"
-    },
-    {
-        label: "Wiki",
-        href: "https://wiki.rokucraft.com/"
-    }
-] satisfies Link[]
+  {
+    label: "Rules",
+    href: "/rules",
+  },
+  {
+    label: "Map",
+    href: "/map",
+  },
+  {
+    label: "Forum",
+    href: "https://forum.rokucraft.com/",
+  },
+  {
+    label: "Wiki",
+    href: "https://wiki.rokucraft.com/",
+  },
+] satisfies Link[];
 ---
-<div class="flex bg-amber-100 px-10 py-4 text-xl font-semibold items-center justify-between text-stone-900 sticky top-0 gap-8">
-    <div class="flex gap-8 items-center">
-        <a href="/" class="font-display font-normal text-3xl hover:text-amber-900">Rokucraft</a>
-        {
-            links.map(link => (
-                <a href={link.href} class="hover:text-amber-900 duration-200 transition-colors ease-in-out">{link.label}</a>
-            ))
-        }
-    
-    </div>
-    <a href=""></a>
-    <a href="https://store.rokucraft.com" class="py-1 px-4 rounded-full from-violet-500 via-fuchsia-500 to-pink-500  shadow-md text-white
-    bg-gradient-to-tr bg-[size:200%] bg-left-bottom hover:bg-right-top transition-all whitespace-nowrap duration-300 ease-in-out">
-        Donation Store
+
+<div
+  class="sticky top-0 flex items-center justify-between gap-8 bg-amber-100 px-10 py-4 text-xl font-semibold text-stone-900"
+>
+  <div class="flex items-center gap-8">
+    <a href="/" class="font-display text-3xl font-normal hover:text-amber-900">
+      Rokucraft
     </a>
+    {
+      links.map((link) => (
+        <a
+          href={link.href}
+          class="transition-colors duration-200 ease-in-out hover:text-amber-900"
+        >
+          {link.label}
+        </a>
+      ))
+    }
+  </div>
+  <a
+    href="https://store.rokucraft.com"
+    class="whitespace-nowrap rounded-full bg-gradient-to-tr from-violet-500 via-fuchsia-500 to-pink-500 bg-[size:200%] bg-left-bottom py-1 px-4 text-white shadow-md transition-all duration-300 ease-in-out hover:bg-right-top"
+  >
+    Donation Store
+  </a>
 </div>
