@@ -1,0 +1,12 @@
+---
+import Navbar from "../components/Navbar.astro"
+import Layout from "../layouts/Layout.astro"
+
+const { frontmatter } = Astro.props
+---
+<Layout title={frontmatter.title}>
+     <Navbar />
+    <main class="m-auto p-4 prose prose-stone prose-ul:my-0">
+        <slot />
+    </main>
+</Layout>
