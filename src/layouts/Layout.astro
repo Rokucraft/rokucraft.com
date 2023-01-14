@@ -4,7 +4,6 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-import "@fontsource/inter/variable.css";
 import "@fontsource/trade-winds";
 ---
 
@@ -16,6 +15,8 @@ import "@fontsource/trade-winds";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   </head>
   <body>
     <slot />

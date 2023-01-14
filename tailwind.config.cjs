@@ -7,7 +7,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["InterVariable", "Inter", defaultTheme.fontFamily.sans],
+				sans: ["Inter var", "Inter", defaultTheme.fontFamily.sans],
 				display: ["Trade Winds", "InterVariable", "Inter", defaultTheme.fontFamily.sans]
 			}
 		},
