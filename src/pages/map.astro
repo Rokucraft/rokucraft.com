@@ -1,11 +1,5 @@
 ---
-import Navbar from "../components/Navbar.astro";
-import Layout from "../layouts/Layout.astro";
+import IframeLayout from "../layouts/IframeLayout.astro";
 ---
 
-<Layout title="Rokucraft Map">
-  <div class="flex h-screen flex-col">
-    <Navbar />
-    <iframe src="https://map.rokucraft.com" class="grow"></iframe>
-  </div>
-</Layout>
+<IframeLayout title="Rokucraft Map" iframeSource="https://map.rokucraft.com" />
