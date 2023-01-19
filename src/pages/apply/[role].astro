@@ -1,0 +1,13 @@
+---
+import IframeLayout from "../../layouts/IframeLayout.astro";
+import { applications } from "../../scripts/applications";
+
+export function getStaticPaths() {
+  return Object.keys(applications).map((role) => ({ params: { role } }));
+}
+
+const { role } = Astro.params as { role: keyof typeof applications };
+const { formUrl, displayName } = applications[role];
+---
+
+<IframeLayout title={displayName + " Application"} iframeSource={formUrl} />
