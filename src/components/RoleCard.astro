@@ -1,0 +1,30 @@
+---
+import classNames from '../scripts/classnames';
+type Props = {
+  title: string;
+  destination: string;
+  color: string;
+};
+
+const { title, destination, color } = Astro.props;
+---
+
+<div
+  class={classNames(
+    "max-w-sm text-stone-900 shadow-md hover:shadow-lg p-7 rounded-2xl flex flex-col justify-between bg-gradient-to-br gap-7 transition-shadow",
+    color
+  )}
+>
+  <div>
+    <h2 class="mb-3 text-2xl font-bold">{title}</h2>
+    <p class="font-medium text-stone-900/75">
+      <slot />
+    </p>
+  </div>
+  <a
+    href={destination}
+    class="self-end rounded-full bg-white py-2 px-4 font-bold transition-colors hover:bg-stone-100"
+  >
+    Apply →
+  </a>
+</div>
