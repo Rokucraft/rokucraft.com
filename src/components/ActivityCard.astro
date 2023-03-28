@@ -13,12 +13,12 @@ const { title, description, imageUrl, button } = Astro.props;
 ---
 
 <div
-  class="flex max-w-xs flex-col rounded-xl bg-amber-50 shadow ring-1 ring-amber-900/5"
+  class="flex max-w-xs flex-col rounded-xl bg-cyan-50 shadow ring-1 ring-cyan-900/5"
 >
   <img src={imageUrl} class="rounded-t-xl" />
   <div class="flex grow flex-col justify-between gap-4 p-6">
     <div>
-      <h3 class="mb-1 text-xl font-bold text-amber-900">{title}</h3>
+      <h3 class="mb-1 text-xl font-bold text-cyan-900">{title}</h3>
       <p>
         {description}
       </p>
@@ -27,7 +27,7 @@ const { title, description, imageUrl, button } = Astro.props;
       button && (
         <a
           href={button.href}
-          class="w-fit self-end px-4 py-2 font-semibold text-amber-700 underline underline-offset-8 transition-colors hover:text-amber-500"
+          class="w-fit self-end px-4 py-2 font-semibold text-cyan-700 underline underline-offset-8 transition-colors hover:text-cyan-500"
         >
           {button.label}
         </a>

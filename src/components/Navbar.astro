@@ -29,10 +29,10 @@ const links = [
 ---
 
 <div
-  class="sticky top-0 z-50 flex items-center justify-between gap-8 bg-amber-100 px-10 py-4 text-xl font-semibold "
+  class="sticky top-0 z-50 flex items-center justify-between gap-8 bg-cyan-100 px-10 py-4 text-xl font-semibold "
 >
-  <div class="flex items-center gap-8 text-stone-900 ">
-    <a href="/" class="font-display text-3xl w-[9.6rem] font-normal transition-colors duration-200 ease-in-out hover:text-amber-900">
+  <div class="flex items-center gap-8 text-slate-900 ">
+    <a href="/" class="font-display text-3xl w-[9.6rem] font-normal transition-colors duration-200 ease-in-out hover:text-cyan-900">
       Rokucraft
     </a>
     {
@@ -40,11 +40,11 @@ const links = [
         <a
           href={link.href}
           target={link.href.startsWith("http") ? "_blank" : "_self"}
-          class="group flex whitespace-nowrap transition-colors duration-200 ease-in-out hover:text-amber-900"
+          class="group flex whitespace-nowrap transition-colors duration-200 ease-in-out hover:text-cyan-900"
         >
           <span>{link.label}</span>
           {link.href.startsWith("http") && (
-            <span class="text-stone-700 group-hover:text-inherit">↗</span>
+            <span class="text-slate-700 group-hover:text-inherit">↗</span>
           )}
         </a>
       ))
