@@ -14,7 +14,7 @@
     "@astrojs/tailwind": "^3.1.1",
     "@fontsource/trade-winds": "^4.5.10",
     "astro": "^2.1.7",
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.3.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
