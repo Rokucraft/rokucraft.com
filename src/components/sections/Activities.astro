@@ -1,0 +1,37 @@
+---
+import ActivityCard from "../ActivityCard.astro";
+
+const activities = [
+  {
+    title: "Exploration",
+    description:
+      "Explore a wonderful world filled with iconic locations, quests, and secrets to uncover.",
+    imageUrl: "https://i.imgur.com/Uxch3uK.jpg",
+    button: {
+      href: "/map",
+      label: "Check out our map →",
+    },
+  },
+  {
+    title: "Bending",
+    description:
+      "Learn new bending moves, duel your friends, show off your skills in tournaments, and become a true master of your element!",
+    imageUrl: "https://i.imgur.com/vRyLNRu.jpg",
+  },
+  {
+    title: "Roleplay",
+    description:
+      "Create your own character and begin your roleplay adventure! What will your story be?",
+    imageUrl: "https://i.imgur.com/TbMsjf5.jpg",
+  },
+] satisfies Parameters<typeof ActivityCard>[0][];
+---
+
+<section class="mt-8 w-full bg-amber-100 pb-12 pt-8">
+  <h2 class="mb-6 text-center text-4xl font-extrabold text-amber-950">
+    Experience the adventure
+  </h2>
+  <div class="flex w-full flex-wrap justify-center gap-10">
+    {activities.map((a) => <ActivityCard {...a} />)}
+  </div>
+</section>

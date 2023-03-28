@@ -2,11 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Discord from "../components/sections/Discord.astro";
+import Activities from "../components/sections/Activities.astro";
 ---
 
 <Layout title="Rokucraft">
   <Navbar />
-  <main class="min-h-screen bg-amber-100">
+  <main class="bg-amber-100 text-stone-900">
     <div class="grid grid-cols-2">
       <p class="m-auto text-5xl font-extrabold text-amber-900">
         Explore a <br />
@@ -17,6 +18,7 @@ import Discord from "../components/sections/Discord.astro";
         </span>
       </p>
     </div>
+    <Activities />
     <Discord />
   </main>
 </Layout>
