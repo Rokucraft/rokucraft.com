@@ -1,0 +1,140 @@
+---
+import {
+  siTiktok,
+  siYoutube,
+  siTwitter,
+  siGithub,
+  siInstagram,
+  siFacebook,
+} from "simple-icons";
+import SimpleIcon from "./SimpleIcon.astro";
+
+const links = [
+  {
+    title: "Explore",
+    links: [
+      {
+        label: "Map",
+        link: "/map",
+      },
+      {
+        label: "Wiki",
+        link: "https://wiki.rokucraft.com",
+      },
+      {
+        label: "Store",
+        link: "https://store.rokucraft.com",
+      },
+    ],
+  },
+  {
+    title: "Community",
+    links: [
+      {
+        label: "Rules",
+        link: "/rules",
+      },
+      {
+        label: "Forum",
+        link: "https://forum.rokucraft.com",
+      },
+      {
+        label: "Apply",
+        link: "/apply",
+      },
+      {
+        label: "Ban appeal",
+        link: "/appeal",
+      },
+    ],
+  },
+] satisfies { title: string; links: { label: string; link: string }[] }[];
+
+const socials = [
+  {
+    icon: siTiktok,
+    link: "https://tiktok.com/@rokucraft",
+  },
+  {
+    icon: siYoutube,
+    link: "https://youtube.com/@rokucraft",
+  },
+  {
+    icon: siTwitter,
+    link: "https://twitter.com/avatarrokucraft",
+  },
+  {
+    icon: siInstagram,
+    link: "https://instagram.com/rokucraftserver",
+  },
+  {
+    icon: siFacebook,
+    link: "https://facebook.com/rokucraft",
+  },
+  {
+    icon: siGithub,
+    link: "https://github.com/Rokucraft",
+  },
+];
+---
+
+<footer class="text-cyan-950">
+  <div class="bg-cyan-400">
+    <div
+      class="mx-auto flex max-w-5xl flex-col justify-between gap-4 p-8 sm:flex-row"
+    >
+      <span class="cursor-default font-display text-3xl">Rokucraft</span>
+      <div class="flex max-w-xs grow justify-between gap-4">
+        {
+          links.map((category) => (
+            <div>
+              <h3 class="font-bold">{category.title}</h3>
+              <ul>
+                {category.links.map((link) => (
+                  <li>
+                    <a
+                      target={
+                        link.link.startsWith("https://") ? "_blank" : "_self"
+                      }
+                      href={link.link}
+                      class="transition-colors hover:text-cyan-800"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <div class="bg-cyan-500">
+    <div
+      class="m-auto flex max-w-5xl grow flex-col gap-8 p-8 md:flex-row-reverse md:items-center md:justify-between"
+    >
+      <div class="flex gap-4">
+        {
+          socials.map((s) => (
+            <a href={s.link} target="_blank">
+              <SimpleIcon
+                class="hover:fill-cyan-950 h-8 w-8 fill-cyan-800 transition"
+                {...s}
+              />
+            </a>
+          ))
+        }
+      </div>
+      <div>
+        <p class="font-medium">&copy; 2023 Rokucraft</p>
+        <p class="max-w-md text-xs text-cyan-900/90">
+          Rokucraft is not in any way affiliated, associated, authorized,
+          endorsed by, or in any way officially connected with Mojang Studios,
+          Paramount Global, Nickelodeon or any company, or any of its
+          subsidiaries or its affiliates.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

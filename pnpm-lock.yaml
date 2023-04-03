@@ -10,6 +10,9 @@ dependencies:
   astro:
     specifier: ^2.1.8
     version: 2.1.8
+  simple-icons:
+    specifier: ^8.8.0
+    version: 8.8.0
   tailwindcss:
     specifier: ^3.3.0
     version: 3.3.0(postcss@8.4.21)
@@ -2809,6 +2812,11 @@ packages:
 
   /signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
+    dev: false
+
+  /simple-icons@8.8.0:
+    resolution: {integrity: sha512-/aSnVSF11629RTsm8bizN7MXdO82zNQuuOh4eDd7SUPkwYubM62OgCIFv4pUgXZE5fxO4whgksyFLgB7RzVARg==}
+    engines: {node: '>=0.12.18'}
     dev: false
 
   /sisteransi@1.0.5:
