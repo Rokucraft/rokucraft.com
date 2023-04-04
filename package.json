@@ -14,13 +14,12 @@
     "@astrojs/react": "^2.1.1",
     "@astrojs/tailwind": "^3.1.1",
     "@fontsource/trade-winds": "^4.5.10",
-    "@heroicons/react": "^2.0.17",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "astro": "^2.1.8",
+    "astro-icon": "^0.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "simple-icons": "^8.8.0",
     "tailwindcss": "^3.3.0"
   },
   "devDependencies": {

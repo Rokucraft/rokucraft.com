@@ -1,13 +1,5 @@
 ---
-import {
-  siTiktok,
-  siYoutube,
-  siTwitter,
-  siGithub,
-  siInstagram,
-  siFacebook,
-} from "simple-icons";
-import SimpleIcon from "./SimpleIcon.astro";
+import { Icon } from "astro-icon";
 
 const links = [
   {
@@ -52,27 +44,27 @@ const links = [
 
 const socials = [
   {
-    icon: siTiktok,
+    platform: "TikTok",
     link: "https://tiktok.com/@rokucraft",
   },
   {
-    icon: siYoutube,
+    platform: "YouTube",
     link: "https://youtube.com/@rokucraft",
   },
   {
-    icon: siTwitter,
+    platform: "Twitter",
     link: "https://twitter.com/avatarrokucraft",
   },
   {
-    icon: siInstagram,
+    platform: "Instagram",
     link: "https://instagram.com/rokucraftserver",
   },
   {
-    icon: siFacebook,
+    platform: "Facebook",
     link: "https://facebook.com/rokucraft",
   },
   {
-    icon: siGithub,
+    platform: "GitHub",
     link: "https://github.com/Rokucraft",
   },
 ];
@@ -118,9 +110,11 @@ const socials = [
         {
           socials.map((s) => (
             <a href={s.link} target="_blank">
-              <SimpleIcon
-                class="hover:fill-cyan-950 h-8 w-8 fill-cyan-800 transition"
-                {...s}
+              <Icon
+                pack="simple-icons"
+                name={s.platform.toLowerCase()}
+                title={s.platform}
+                class="hover:text-cyan-950 h-8 w-8 text-cyan-800 transition"
               />
             </a>
           ))
