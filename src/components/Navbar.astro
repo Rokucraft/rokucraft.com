@@ -1,62 +1,106 @@
 ---
-type Link = {
-  label: string;
-  href: string;
-};
+import {
+  Bars3Icon,
+  BookOpenIcon,
+  BookmarkIcon,
+  ChatBubbleLeftRightIcon,
+  MapIcon,
+  ShoppingBagIcon,
+  UserGroupIcon,
+} from "@heroicons/react/24/outline";
 
 const links = [
   {
     label: "Rules",
+    icon: BookmarkIcon,
     href: "/rules",
   },
   {
     label: "Map",
+    icon: MapIcon,
     href: "/map",
   },
   {
     label: "Apply",
+    icon: UserGroupIcon,
     href: "/apply",
   },
   {
     label: "Forum",
+    icon: ChatBubbleLeftRightIcon,
     href: "https://forum.rokucraft.com/",
   },
   {
     label: "Wiki",
+    icon: BookOpenIcon,
     href: "https://wiki.rokucraft.com/",
   },
-] satisfies Link[];
+];
+
+const storeLink = {
+  label: "Donation Store",
+  icon: ShoppingBagIcon,
+  href: "https://store.rokucraft.com",
+};
 ---
 
-<div
-  class="sticky top-0 z-50 flex items-center justify-between gap-8 overflow-auto bg-cyan-100 px-10 py-4 text-xl font-semibold ring-1 ring-cyan-900/10"
+<nav
+  data-open="false"
+  id="menu"
+  class="group sticky top-0 z-50 flex flex-col items-center justify-between gap-x-12 bg-cyan-100 px-8 text-cyan-950 ring-2 ring-cyan-900/10 lg:flex-row"
 >
-  <div class="flex items-center gap-8 text-slate-900">
+  <div class="flex h-16 items-center justify-between self-stretch">
     <a
+      class="font-display text-3xl transition-colors hover:text-cyan-800"
       href="/"
-      class="w-[9.6rem] font-display text-3xl font-normal transition-colors duration-200 ease-in-out hover:text-cyan-900"
     >
       Rokucraft
     </a>
+    <button id="toggle" class="lg:hidden">
+      <Bars3Icon className="h-8" />
+    </button>
+  </div>
+  <ul
+    id="links"
+    class="flex shrink grow flex-col items-center justify-between gap-6 group-data-[open=false]:hidden lg:max-w-xl lg:flex-row lg:group-data-[open=false]:flex"
+  >
     {
-      links.map((link) => (
-        <a
-          href={link.href}
-          target={link.href.startsWith("http") ? "_blank" : "_self"}
-          class="group flex whitespace-nowrap transition-colors duration-200 ease-in-out hover:text-cyan-900"
-        >
-          <span>{link.label}</span>
-          {link.href.startsWith("http") && (
-            <span class="text-slate-700 group-hover:text-inherit">↗</span>
-          )}
-        </a>
+      links.map((l) => (
+        <li>
+          <a
+            target={l.href.startsWith("http") ? "_blank" : "_self"}
+            class="group/link flex items-center gap-2 text-lg font-semibold transition-colors hover:text-cyan-800"
+            href={l.href}
+          >
+            <l.icon className="h-6 stroke-[1.7]" />
+            <span class="relative flex">
+              {l.label}
+              {l.href.startsWith("http") && (
+                <span class="relative">
+                  <span class="absolute opacity-75 transition-opacity group-hover/link:opacity-100 lg:opacity-0">
+                    ↗
+                  </span>
+                </span>
+              )}
+            </span>
+          </a>
+        </li>
       ))
     }
-  </div>
+  </ul>
   <a
-    href="https://store.rokucraft.com"
-    class="whitespace-nowrap rounded-full bg-gradient-to-tr from-violet-500 via-fuchsia-500 to-pink-500 bg-[size:200%] bg-left-bottom px-4 py-1 text-white shadow-md transition-[background-position] duration-300 ease-in-out hover:bg-right-top"
+    href={storeLink.href}
+    target="_blank"
+    class="my-6 flex items-center gap-2 whitespace-nowrap rounded-full bg-purple-500 px-4 py-1 text-lg font-semibold text-white shadow transition hover:bg-purple-600 group-data-[open=false]:hidden lg:my-0 lg:group-data-[open=false]:flex"
   >
-    Donation Store
+    <storeLink.icon className="h-6" />
+    {storeLink.label}
   </a>
-</div>
+</nav>
+
+<script>
+  const menu = document.getElementById("menu")!;
+  const menuToggle = document.getElementById("toggle")!;
+  menuToggle.onclick = () =>
+    (menu.dataset["open"] = menu.dataset["open"] == "true" ? "false" : "true");
+</script>
