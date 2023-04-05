@@ -10,6 +10,9 @@ dependencies:
   '@fontsource/trade-winds':
     specifier: ^4.5.10
     version: 4.5.10
+  '@heroicons/react':
+    specifier: ^2.0.17
+    version: 2.0.17(react@18.2.0)
   '@types/react':
     specifier: ^18.0.21
     version: 18.0.33
@@ -615,6 +618,14 @@ packages:
 
   /@fontsource/trade-winds@4.5.10:
     resolution: {integrity: sha512-YtR27+6G+ugdIz4MnQV2RBJgMo3F/+QnLxrkwv2L3I+S380792+kbOKIhqmk/MvDPc90W3Ld5LCcwq+pCwGX/A==}
+    dev: false
+
+  /@heroicons/react@2.0.17(react@18.2.0):
+    resolution: {integrity: sha512-90GMZktkA53YbNzHp6asVEDevUQCMtxWH+2UK2S8OpnLEu7qckTJPhNxNQG52xIR1WFTwFqtH6bt7a60ZNcLLA==}
+    peerDependencies:
+      react: '>= 16'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /@jridgewell/gen-mapping@0.1.1:
