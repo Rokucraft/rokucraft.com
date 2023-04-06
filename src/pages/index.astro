@@ -4,21 +4,13 @@ import Navbar from "../components/Navbar.astro";
 import Discord from "../components/sections/Discord.astro";
 import Activities from "../components/sections/Activities.astro";
 import Footer from "../components/Footer.astro";
+import Hero from "../components/sections/Hero.astro";
 ---
 
 <Layout title="Rokucraft">
   <Navbar />
   <main class="bg-cyan-100 text-slate-900">
-    <div class="grid grid-cols-2 p-8">
-      <p class="m-auto text-5xl font-extrabold text-cyan-900">
-        Explore a <br />
-        <span
-          class="text-from bg-gradient-to-tr from-violet-500 to-fuchsia-500 bg-clip-text text-transparent drop-shadow-md"
-        >
-          wonderful world
-        </span>
-      </p>
-    </div>
+    <Hero />
     <Activities />
     <Discord />
     <Footer />
