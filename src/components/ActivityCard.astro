@@ -2,20 +2,23 @@
 type Props = {
   title: string;
   description: string;
-  imageUrl: string;
+  image: {
+    url: string;
+    alt: string;
+  };
   button?: {
     label: string;
     href: string;
   };
 };
 
-const { title, description, imageUrl, button } = Astro.props;
+const { title, description, image, button } = Astro.props;
 ---
 
 <div
   class="flex sm:max-w-xs min-w-[15rem] flex-col rounded-xl bg-cyan-50 shadow ring-1 ring-cyan-900/5 flex-1"
 >
-  <img src={imageUrl} class="rounded-t-xl" />
+  <img src={image.url} alt={image.alt} class="rounded-t-xl" />
   <div class="flex grow flex-col justify-between gap-4 p-6">
     <div>
       <h3 class="mb-1 text-xl font-bold text-cyan-900">{title}</h3>

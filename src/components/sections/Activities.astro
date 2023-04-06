@@ -6,7 +6,10 @@ const activities = [
     title: "Exploration",
     description:
       "Explore a wonderful world filled with iconic locations, quests, and secrets to uncover.",
-    imageUrl: "https://i.imgur.com/Uxch3uK.jpg",
+    image: {
+      url: "https://i.imgur.com/Uxch3uK.jpg",
+      alt: "A view of the Southern Air Temple in Rokucraft",
+    },
     button: {
       href: "/map",
       label: "Check out our map →",
@@ -16,13 +19,19 @@ const activities = [
     title: "Bending",
     description:
       "Learn new bending moves, duel your friends, show off your skills in tournaments, and become a true master of your element!",
-    imageUrl: "https://i.imgur.com/vRyLNRu.jpg",
+    image: {
+      url: "https://i.imgur.com/vRyLNRu.jpg",
+      alt: "4 people standing opposite each other in the Agni Kai arena in Rokucraft",
+    },
   },
   {
     title: "Roleplay",
     description:
       "Create your own character and begin your roleplay adventure! What will your story be?",
-    imageUrl: "https://i.imgur.com/TbMsjf5.jpg",
+    image: {
+      url: "https://i.imgur.com/TbMsjf5.jpg",
+      alt: "A waterbender and a spirit in a battle-ravaged landscape",
+    },
   },
 ] satisfies Parameters<typeof ActivityCard>[0][];
 ---
