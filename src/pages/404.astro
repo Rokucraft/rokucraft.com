@@ -1,0 +1,30 @@
+---
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404">
+  <div class="flex min-h-screen flex-col">
+    <Navbar />
+    <main class="my-24 grow space-y-8 text-center text-cyan-950 mx-8">
+      <div>
+        <span class="text-9xl font-black">404</span>
+        <p class="text-2xl font-bold">Page not found</p>
+      </div>
+      <div class="text-lg">
+        <p class="">Did it vanish when the world needed it most?</p>
+        <p>
+          Lets go
+          <a
+            href="/"
+            class="text-cyan-700 underline underline-offset-4 transition-colors hover:text-cyan-500"
+            >home</a
+          >
+          and try from there.
+        </p>
+      </div>
+    </main>
+    <Footer />
+  </div>
+</Layout>
