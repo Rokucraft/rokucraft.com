@@ -5,12 +5,13 @@ layout: "../layouts/MarkdownPage.astro"
 
 # Rokucraft Rules
 
+## Main Rules
 1. **Be respectful at all times**  
-    Please treat others the way that you would like to be treated. We are accepting of individuals from all backgrounds and cultures, and absolutely no harassment, discrimination, or hate speech will be tolerated.  
+Please treat others the way that you would like to be treated. We are accepting of individuals from all backgrounds and cultures, and absolutely no harassment, discrimination, or hate speech will be tolerated.
 If you wish to provide feedback, please do so in a constructive manner.
 
 2. **Refrain from inappropriate behaviour**  
-  This includes, but is not limited to:
+This includes, but is not limited to:
     - Threats
     - Trolling
     - Scamming
@@ -60,3 +61,25 @@ Staff impersonation on any level is forbidden. The use of similar names or skins
 
 15. **Respect decisions made by staff**  
 Staff attempt to promote and maintain a positive environment on Rokucraft. If you feel that a staff member’s decision is unfair, please contact a Team Leader or Admin regarding the situation.
+
+* * *
+
+## Housing & Shop Rules
+
+1. **Do not exceed the following limits:**  
+    - **Your main account can have two houses and two shops**
+    - **Your alternate accounts can only have one house and one shop**  
+      Please note that ships and air bison are considered ‘houses’.
+    - **Houses and shops can have up to 30 entities, whereas estates can have up to 50**  
+      Entities include item frames and paintings. These limits exist to prevent lag that may affect yourself and others.
+
+2. **Do not alter the exterior of your buildings**  
+You are free to change and decorate the interior of your house or shop. However, do not make significant changes to the exterior of the building. This is to maintain the intended atmosphere and look of the town or city. You may only make minor changes, such as placing flowers, pots or banners.
+
+3. **Do not turn your house into a shop or vice versa**
+
+* * *
+
+## Roleplay Rules & Guidelines
+We also have roleplay rules and guidelines that should be followed.
+They can be found on our [Roleplay Rules & Guidelines](https://wiki.rokucraft.com/roleplay/roleplay-rules) page.
