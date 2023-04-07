@@ -6,8 +6,8 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout title="Apply">
   <Navbar />
-  <div class="mx-7 mb-7 mt-4 space-y-8 text-slate-900">
-    <div>
+  <main class="mx-7 mb-7 mt-4 space-y-8 text-slate-900">
+    <section>
       <h2 class="text-3xl font-bold">Staff positions</h2>
       <div class="mt-4 grid max-w-max gap-7 sm:grid-cols-2 lg:grid-cols-3">
         <RoleCard
@@ -29,8 +29,8 @@ import Layout from "../../layouts/Layout.astro";
           gameplay mechanics.
         </RoleCard>
       </div>
-    </div>
-    <div>
+    </section>
+    <section>
       <h2 class="text-3xl font-bold">Non-staff positions</h2>
       <div class="mt-4 grid max-w-max gap-7 sm:grid-cols-2 lg:grid-cols-3">
         <RoleCard
@@ -62,6 +62,6 @@ import Layout from "../../layouts/Layout.astro";
           and Facebook?
         </RoleCard>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </Layout>
