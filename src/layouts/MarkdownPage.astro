@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -10,4 +11,5 @@ const { frontmatter } = Astro.props;
   <main class="prose prose-stone mx-auto p-4 prose-ul:my-0">
     <slot />
   </main>
+  <Footer />
 </Layout>
