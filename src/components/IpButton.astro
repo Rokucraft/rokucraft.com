@@ -1,9 +1,21 @@
 ---
-// TODO: Add tooltip on hover and copy on click
+const ip = "play.rokucraft.com";
 ---
 
 <button
   class="rounded-md bg-fuchsia-300/30 px-4 py-2 font-mono font-bold text-fuchsia-700 shadow-md ring-1 ring-fuchsia-400/80 transition hover:shadow-lg"
+  id="ip"
 >
-  play.rokucraft.com
+  {ip}
 </button>
+<script>
+  const ipButton = document.getElementById("ip")!;
+  const ip = ipButton.innerText;
+  ipButton.onclick = () => {
+    navigator.clipboard.writeText(ip);
+    ipButton.innerText = "Copied to clipboard!";
+    setTimeout(() => {
+      ipButton.innerText = ip;
+    }, 2000);
+  };
+</script>
