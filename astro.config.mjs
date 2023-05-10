@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  site: "https://new.rokucraft.com",
+  site: "https://www.rokucraft.com",
   experimental: {
     assets: true
   }
