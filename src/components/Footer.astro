@@ -75,40 +75,38 @@ const socials = [
 ---
 
 <footer class="mt-20 text-cyan-950 ring-1 ring-slate-900/10">
-  <div class="">
-    <div
-      class="mx-auto flex max-w-5xl flex-col justify-between gap-4 p-8 sm:flex-row"
-    >
-      <div class="flex flex-col">
-        <span class="cursor-default font-display text-3xl">Rokucraft</span>
-        <span class="font-mono text-lg font-semibold text-cyan-700">
-          play.rokucraft.com
-        </span>
-      </div>
-      <div class="flex max-w-xs grow justify-between gap-4">
-        {
-          links.map((category) => (
-            <div>
-              <h3 class="font-extrabold">{category.title}</h3>
-              <ul>
-                {category.links.map((link) => (
-                  <li>
-                    <a
-                      target={
-                        link.link.startsWith("https://") ? "_blank" : "_self"
-                      }
-                      href={link.link}
-                      class="font-medium text-cyan-800 transition-colors hover:text-cyan-600"
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))
-        }
-      </div>
+  <div
+    class="mx-auto flex max-w-5xl flex-col justify-between gap-4 p-8 sm:flex-row"
+  >
+    <div class="flex flex-col">
+      <span class="cursor-default font-display text-3xl">Rokucraft</span>
+      <span class="font-mono text-lg font-semibold text-cyan-700">
+        play.rokucraft.com
+      </span>
+    </div>
+    <div class="flex max-w-xs grow justify-between gap-4">
+      {
+        links.map((category) => (
+          <div>
+            <h3 class="font-extrabold">{category.title}</h3>
+            <ul>
+              {category.links.map((link) => (
+                <li>
+                  <a
+                    target={
+                      link.link.startsWith("https://") ? "_blank" : "_self"
+                    }
+                    href={link.link}
+                    class="font-medium text-cyan-800 transition-colors hover:text-cyan-600"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
     </div>
   </div>
   <hr class="mx-auto max-w-6xl border-slate-900/10" />
