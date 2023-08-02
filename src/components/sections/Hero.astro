@@ -1,20 +1,45 @@
 ---
-import IpButton from "../IpButton.astro";
+import { Image } from "astro:assets";
+import miner from "~/assets/Miner.png";
 ---
 
-<section class="bg-cyan-100 px-8 py-24">
-  <div class="flex flex-col items-center gap-8">
-    <h1
-      class="max-w-xl text-center text-6xl font-black tracking-tight text-cyan-950 md:max-w-2xl md:text-7xl"
-    >
-      Some really super cool hook here
-    </h1>
-    <div class="flex flex-col items-center gap-2 text-xl md:text-2xl">
-      <p class="font-bold text-cyan-900">Join us at</p>
-      <IpButton />
-      <p class="text-lg font-semibold text-cyan-900">
-        on Minecraft: Java Edition
-      </p>
+<section class="bg-cyan-100">
+  <div class="pt-10">
+    <div class="space-between flex max-w-full items-center gap-10">
+      <div class="mx-12 mb-20 grow lg:mx-20">
+        <div class="flex max-w-fit flex-col gap-7 lg:ml-8">
+          <div
+            class="flex w-max items-center gap-2 rounded-full p-1 pr-3 ring-1 ring-slate-900/10"
+          >
+            <span
+              class="inline-block rounded-full bg-purple-300/25 px-2 py-1 font-bold text-purple-600 ring-1 ring-purple-500/50"
+            >
+              Join us
+            </span>
+            <span class="font-mono text-lg font-semibold text-cyan-800">
+              play.rokucraft.com
+            </span>
+          </div>
+          <p
+            class="w-max text-7xl font-black tracking-tight text-cyan-950 xl:text-8xl"
+          >
+            Under <br /> construction
+          </p>
+          <p
+            class="max-w-md text-xl font-semibold text-cyan-700 xl:max-w-lg xl:text-2xl"
+          >
+            We are currently working on the finishing touches of our website.
+            Feel free to explore in the meantime!
+          </p>
+        </div>
+      </div>
+      <div class="self-end">
+        <Image
+          src={miner}
+          alt=""
+          class="hidden max-h-[60vh] object-contain object-right md:inline xl:max-h-[70vh]"
+        />
+      </div>
     </div>
   </div>
 </section>
