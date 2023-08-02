@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^4.0.0
     version: 4.0.0(astro@2.9.7)(tailwindcss@3.3.3)
+  '@fontsource-variable/jetbrains-mono':
+    specifier: ^5.0.6
+    version: 5.0.6
   '@fontsource/trade-winds':
     specifier: ^5.0.5
     version: 5.0.5
@@ -819,6 +822,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/jetbrains-mono@5.0.6:
+    resolution: {integrity: sha512-EwcHm7hU8FlosfeW5RRGEB9A3w7Yg7pkF/CgMlekkkDArnbu1YYGlroZw361IG0CFkzjjjPo73vFycdcH+1pbg==}
+    dev: false
 
   /@fontsource/trade-winds@5.0.5:
     resolution: {integrity: sha512-/ng2fFt0e3nQ+PRp8Yld3DsTSiE4u9x/Nr/42pwN0kjLcPZBcw2U0h9m+FPrbPc/FuPJ9wq3zR26w6b16hVEQA==}
