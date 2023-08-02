@@ -70,7 +70,7 @@ const socials = [
 ];
 ---
 
-<footer class="text-cyan-950 mt-20 ring-1 ring-slate-900/10">
+<footer class="mt-20 text-cyan-950 ring-1 ring-slate-900/10">
   <div class="">
     <div
       class="mx-auto flex max-w-5xl flex-col justify-between gap-4 p-8 sm:flex-row"
@@ -94,7 +94,7 @@ const socials = [
                         link.link.startsWith("https://") ? "_blank" : "_self"
                       }
                       href={link.link}
-                      class="font-medium transition-colors text-cyan-800 hover:text-cyan-600"
+                      class="font-medium text-cyan-800 transition-colors hover:text-cyan-600"
                     >
                       {link.label}
                     </a>
@@ -107,32 +107,32 @@ const socials = [
       </div>
     </div>
   </div>
-  <hr class="border-slate-900/10 max-w-6xl mx-auto">
-    <div
-      class="m-auto flex max-w-5xl grow flex-col gap-8 p-8 md:flex-row-reverse md:items-center md:justify-between"
-    >
-      <div class="flex gap-4">
-        {
-          socials.map((s) => (
-            <a href={s.link} target="_blank">
-              <Icon
-                pack="simple-icons"
-                name={s.platform.toLowerCase()}
-                title={s.platform}
-                class="hover:text-cyan-700 h-8 w-8 md:h-7 md:w-7 text-cyan-900 transition"
-              />
-            </a>
-          ))
-        }
-      </div>
-      <div>
-        <p class="font-semibold">&copy; 2023 Rokucraft</p>
-        <p class="max-w-md text-xs font-medium text-cyan-950">
-          Rokucraft is not in any way affiliated, associated, authorized,
-          endorsed by, or in any way officially connected with Mojang Studios,
-          Paramount Global, Nickelodeon or any company, or any of its
-          subsidiaries or its affiliates.
-        </p>
-      </div>
+  <hr class="mx-auto max-w-6xl border-slate-900/10" />
+  <div
+    class="m-auto flex max-w-5xl grow flex-col gap-8 p-8 md:flex-row-reverse md:items-center md:justify-between"
+  >
+    <div class="flex gap-4">
+      {
+        socials.map((s) => (
+          <a href={s.link} target="_blank">
+            <Icon
+              pack="simple-icons"
+              name={s.platform.toLowerCase()}
+              title={s.platform}
+              class="h-8 w-8 text-cyan-900 transition hover:text-cyan-700 md:h-7 md:w-7"
+            />
+          </a>
+        ))
+      }
     </div>
+    <div>
+      <p class="font-semibold">&copy; 2023 Rokucraft</p>
+      <p class="max-w-md text-xs font-medium text-cyan-950">
+        Rokucraft is not in any way affiliated, associated, authorized, endorsed
+        by, or in any way officially connected with Mojang Studios, Paramount
+        Global, Nickelodeon or any company, or any of its subsidiaries or its
+        affiliates.
+      </p>
+    </div>
+  </div>
 </footer>
