@@ -12,21 +12,21 @@
   },
   "dependencies": {
     "@astrojs/react": "^2.2.1",
-    "@astrojs/tailwind": "^3.1.3",
-    "@fontsource/trade-winds": "^4.5.10",
+    "@astrojs/tailwind": "^4.0.0",
+    "@fontsource/trade-winds": "^5.0.5",
     "@heroicons/react": "^2.0.18",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "astro": "^2.7.0",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "astro": "^2.9.7",
     "astro-icon": "^0.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "prettier": "^2.8.8",
-    "prettier-plugin-astro": "^0.7.2",
-    "prettier-plugin-tailwindcss": "^0.2.8"
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.11.0",
+    "prettier-plugin-tailwindcss": "^0.4.1"
   }
 }
