@@ -9,7 +9,9 @@ const { frontmatter } = Astro.props;
 <Layout title={frontmatter.title}>
   <Navbar />
   <main class="m-6 mb-20">
-    <div class="prose prose-slate prose-cyan mx-auto">
+    <div
+      class="prose prose-slate prose-cyan mx-auto prose-h1:font-black prose-h1:text-center prose-h1:text-6xl prose-h1:text-cyan-950 prose-h1:leading-tight prose-headings:underline prose-h2:decoration-4 prose-h1:decoration-auto prose-h1:underline-offset-[10px] prose-headings:underline-offset-8 prose-headings:decoration-cyan-700"
+    >
       <slot />
     </div>
   </main>
