@@ -15,8 +15,8 @@ dependencies:
     specifier: ^5.0.6
     version: 5.0.6
   '@fontsource/trade-winds':
-    specifier: ^5.0.5
-    version: 5.0.5
+    specifier: ^5.0.8
+    version: 5.0.8
   '@heroicons/react':
     specifier: ^2.0.18
     version: 2.0.18(react@18.2.0)
@@ -832,8 +832,8 @@ packages:
     resolution: {integrity: sha512-EwcHm7hU8FlosfeW5RRGEB9A3w7Yg7pkF/CgMlekkkDArnbu1YYGlroZw361IG0CFkzjjjPo73vFycdcH+1pbg==}
     dev: false
 
-  /@fontsource/trade-winds@5.0.5:
-    resolution: {integrity: sha512-/ng2fFt0e3nQ+PRp8Yld3DsTSiE4u9x/Nr/42pwN0kjLcPZBcw2U0h9m+FPrbPc/FuPJ9wq3zR26w6b16hVEQA==}
+  /@fontsource/trade-winds@5.0.8:
+    resolution: {integrity: sha512-a2aZJPvC4OfNPTl3owBo0DjZGJxm/qyszNbkj3H2MmxFd4Zl3CUsqxP9Uz5YF16QOSULv5/PFvR7xEJOHrwIBg==}
     dev: false
 
   /@heroicons/react@2.0.18(react@18.2.0):
