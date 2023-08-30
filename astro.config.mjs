@@ -6,7 +6,4 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: "https://www.rokucraft.com",
-  experimental: {
-    assets: true
-  }
 })
