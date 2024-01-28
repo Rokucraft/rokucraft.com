@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 const links = [
   {
@@ -46,30 +46,37 @@ const socials = [
   {
     platform: "Ko-fi",
     link: "https://ko-fi.com/rokucraft",
+    icon: "simple-icons:kofi",
   },
   {
     platform: "TikTok",
     link: "https://tiktok.com/@rokucraft",
+    icon: "simple-icons:tiktok",
   },
   {
     platform: "YouTube",
     link: "https://youtube.com/@rokucraft",
+    icon: "simple-icons:youtube",
   },
   {
     platform: "Twitter",
     link: "https://twitter.com/avatarrokucraft",
+    icon: "simple-icons:twitter",
   },
   {
     platform: "Instagram",
     link: "https://instagram.com/rokucraftserver",
+    icon: "simple-icons:instagram",
   },
   {
     platform: "Facebook",
     link: "https://facebook.com/rokucraft",
+    icon: "simple-icons:facebook",
   },
   {
     platform: "GitHub",
     link: "https://github.com/Rokucraft",
+    icon: "simple-icons:github",
   },
 ];
 ---
@@ -118,10 +125,9 @@ const socials = [
         socials.map((s) => (
           <a href={s.link} target="_blank">
             <Icon
-              pack="simple-icons"
-              name={s.platform.toLowerCase()}
+              name={s.icon}
               title={s.platform}
-              class="h-8 w-8 text-cyan-900 transition hover:text-cyan-700 md:h-7 md:w-7"
+              class="text-cyan-900 transition hover:text-cyan-700 md:h-7 md:w-7"
             />
           </a>
         ))
