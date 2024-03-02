@@ -5,7 +5,7 @@ layout: "../layouts/MarkdownPage.astro"
 
 # Mod Guidelines
 
-The changes different mods make to your game can vary wildly, so these guidelines aim to help you understand what mods would or would not be in violation of our rules.
+The changes different mods make to your game can vary wildly, so these guidelines aim to help you understand which mods would or would not be in violation of our rules.
 
 However, please note that any use of mods is at your own risk. It is your own responsibility to ensure any mods you use are in alignment with our rules, and do not give you a competitive advantage. If you are unsure whether you would be allowed to use a specific mod, please ask a staff member.
 
