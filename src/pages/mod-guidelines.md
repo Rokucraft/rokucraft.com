@@ -31,6 +31,7 @@ Mods that influence the way the game looks, without giving any advantage over ot
 - Continuity
 
 ## Disallowed mods
+
 Mods that provide unfair advantages over other players or change the way the game is played, for example:
 
 - Hacked clients
