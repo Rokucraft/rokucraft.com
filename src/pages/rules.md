@@ -42,9 +42,9 @@ Do not advertise any other servers or associations. Advertising to other server 
 
 10. **No cheating or exploiting**  
 We promote a fair and positive environment, enjoyable for all players. Anything that gives you an unfair advantage over others is considered cheating. This rule encompasses the following:
-    - Using mods other than OptiFine
-    - Using hacked clients
     - X-Ray
+    - Using hacked clients
+    - Using mods that violate our [Mod Guidelines](/mod-guidelines)
     - Glitch exploitation - If you find a glitch, please report it to staff!
 
 11. **Do not evade bans or other punishments**  
