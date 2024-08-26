@@ -36,5 +36,5 @@ Mods that provide unfair advantages over other players or change the way the gam
 
 - Hacked clients
 - X-Ray
-- HUD modifications that provide information that isn’t normally given, such as player positions and ore locations *(e.g. minimap mods)*
-- Mods that allow you to change your perspective from what would be possible in vanilla *(e.g. ReplayMod)*
+- HUD modifications that provide information that isn’t normally given, such as player positions and ore locations _(e.g. minimap mods)_
+- Mods that allow you to change your perspective from what would be possible in vanilla _(e.g. ReplayMod)_

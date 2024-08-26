@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
 type Props = {
   title: string;
@@ -18,9 +18,16 @@ const { title, description, image, button } = Astro.props;
 ---
 
 <div
-  class="flex sm:max-w-xs min-w-[15rem] flex-col rounded-xl bg-cyan-50 shadow ring-1 ring-cyan-900/5 flex-1"
+  class="flex min-w-[15rem] flex-1 flex-col rounded-xl bg-cyan-50 shadow ring-1 ring-cyan-900/5 sm:max-w-xs"
 >
-  <Image src={image.url} alt={image.alt} width="3840" height="2160" class="rounded-t-xl" loading="eager" />
+  <Image
+    src={image.url}
+    alt={image.alt}
+    width="3840"
+    height="2160"
+    class="rounded-t-xl"
+    loading="eager"
+  />
   <div class="flex grow flex-col justify-between gap-4 p-6">
     <div>
       <h3 class="mb-1 text-xl font-bold text-cyan-900">{title}</h3>
@@ -32,7 +39,7 @@ const { title, description, image, button } = Astro.props;
       button && (
         <a
           href={button.href}
-          class="w-fit self-end py-2 font-semibold text-cyan-700 underline underline-offset-8 transition-colors hover:text-cyan-500 whitespace-nowrap"
+          class="w-fit self-end whitespace-nowrap py-2 font-semibold text-cyan-700 underline underline-offset-8 transition-colors hover:text-cyan-500"
         >
           {button.label}
         </a>
