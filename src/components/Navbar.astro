@@ -73,11 +73,11 @@ const storeLink = {
             href={l.href}
           >
             <l.icon className="h-6 stroke-[1.7]" />
-            <span class="relative flex">
-              {l.label}
+            <span class="flex">
+              <span>{l.label}</span>
               {l.href.startsWith("http") && (
                 <span class="relative">
-                  <span class="absolute opacity-75 transition-opacity group-hover/link:opacity-100 lg:opacity-0">
+                  <span class="absolute bottom-1 opacity-75 transition-opacity group-hover/link:opacity-100 lg:opacity-0">
                     ↗
                   </span>
                 </span>
