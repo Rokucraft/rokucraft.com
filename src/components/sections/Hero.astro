@@ -8,7 +8,7 @@ import miner from "../../assets/Miner.png";
     <div class="space-between flex max-w-full items-center gap-10">
       <div class="mx-12 mb-20 grow lg:mx-20">
         <div
-          class="flex max-w-fit flex-col gap-7 lg:ml-8 items-center sm:items-start"
+          class="flex max-w-fit flex-col items-center gap-7 sm:items-start lg:ml-8"
         >
           <div
             class="flex w-max items-center gap-2 rounded-full p-1 pr-3 ring-1 ring-slate-900/10"
@@ -23,12 +23,12 @@ import miner from "../../assets/Miner.png";
             </span>
           </div>
           <p
-            class="w-max text-center sm:text-left text-5xl sm:text-7xl font-black tracking-tight text-cyan-950 xl:text-8xl"
+            class="w-max text-center text-5xl font-black tracking-tight text-cyan-950 sm:text-left sm:text-7xl xl:text-8xl"
           >
             Under <br /> construction
           </p>
           <p
-            class="max-w-md text-center sm:text-left text-lg sm:text-xl font-semibold text-cyan-700 xl:max-w-lg xl:text-2xl"
+            class="max-w-md text-center text-lg font-semibold text-cyan-700 sm:text-left sm:text-xl xl:max-w-lg xl:text-2xl"
           >
             We are currently working on the finishing touches of our website.
             Feel free to explore in the meantime!
@@ -39,6 +39,7 @@ import miner from "../../assets/Miner.png";
         <Image
           src={miner}
           alt=""
+          loading="eager"
           class="hidden max-h-[60vh] object-contain object-right md:inline xl:max-h-[70vh]"
         />
       </div>
