@@ -1,3 +1,13 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --font-sans: InterVariable;
+  --font-display-0: Trade Winds;
+  --font-mono: JetBrains Mono Variable;
+}
+
 @font-face {
   font-family: InterVariable;
   font-style: normal;
