@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.0",
-    "@astrojs/tailwind": "^6.0.0",
     "@fontsource-variable/jetbrains-mono": "^5.0.22",
     "@fontsource/trade-winds": "^5.0.13",
     "@heroicons/react": "^2.1.5",
