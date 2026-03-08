@@ -36,7 +36,12 @@ layout: "../layouts/MarkdownPage.astro"
    Do not advertise any other servers or associations. Advertising to other server members in direct messages is also strictly prohibited.
 
 10. **No cheating or exploiting**  
-    We promote a fair and positive environment, enjoyable for all players. Anything that gives you an unfair advantage over others is considered cheating. This rule encompasses the following: - X-Ray - Using hacked clients - Using mods that violate our [Mod Guidelines](/mod-guidelines) - Glitch exploitation - If you find a glitch, please report it to staff!
+    We promote a fair and positive environment, enjoyable for all players. Anything that gives you an unfair advantage over others is considered cheating. This rule encompasses the following:
+
+    - X-Ray
+    - Using hacked clients
+    - Using mods that violate our [Mod Guidelines](/mod-guidelines)
+    - Glitch exploitation - If you find a glitch, please report it to staff!
 
 11. **Do not evade bans or other punishments**  
     If banned, please make an appeal on the website; our moderation team will then assess your situation. Ban or punishment evasion will result in an immediate permanent ban without a chance of appeal.
